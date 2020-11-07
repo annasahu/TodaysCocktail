@@ -35,4 +35,5 @@ ext {
     roomVersion = '2.2.5'
     version_retrofit = '2.9.0'
     version_moshi = '1.11.0'
+    version_glide = '4.11.0'
 }

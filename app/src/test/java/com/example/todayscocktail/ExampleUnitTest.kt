@@ -1,4 +1,4 @@
-package com.wcc.todayscocktail
+package com.example.todayscocktail
 
 import org.junit.Test
 

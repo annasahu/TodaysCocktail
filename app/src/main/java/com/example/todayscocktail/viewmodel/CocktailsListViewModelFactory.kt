@@ -1,8 +1,8 @@
-package com.wcc.todayscocktail.viewmodel
+package com.example.todayscocktail.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.wcc.todayscocktail.repository.CocktailsListRepository
+import com.example.todayscocktail.repository.CocktailsListRepository
 
 class CocktailsListViewModelFactory(private val repository: CocktailsListRepository):  ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
