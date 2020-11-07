@@ -7,6 +7,6 @@ data class Cocktail(
     val id: Int,
     @Json(name = "strDrink")
     val name: String,
-    @Json(name = "strDrink")
+    @Json(name = "strDrinkThumb")
     val thumbUrl: String
 )

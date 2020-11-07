@@ -17,9 +17,12 @@ class MainActivity : AppCompatActivity() {
         val viewModelFactory = CocktailsListViewModelFactory(CocktailsListRepository())
         val viewModel = ViewModelProvider(this, viewModelFactory).get(CocktailsListViewModel::class.java)
         val list = viewModel.cocktailList
-        list.observe(this, Observer {
-
-            findViewById<TextView>(R.id.textView).text = it[0].name
+        list.observe(this, Observer {cocktailList ->
+            if(cocktailList.isNotEmpty()) {
+                findViewById<TextView>(R.id.textView).text = cocktailList[0].name.toString()
+            } else {
+                findViewById<TextView>(R.id.textView).text = "deu erro!!!!!"
+            }
         })
 
     }
