@@ -1,0 +1,12 @@
+package com.wcc.todayscocktail.network
+
+import com.squareup.moshi.Json
+
+data class Cocktail(
+    @Json(name = "idDrink")
+    val id: Int,
+    @Json(name = "strDrink")
+    val name: String,
+    @Json(name = "strDrink")
+    val thumbUrl: String
+)
